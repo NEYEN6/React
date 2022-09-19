@@ -14,6 +14,7 @@ import products from "./components/Products/products";
 import { CartProvider } from "./context/CartContext";
 
 
+
 function App() {
     return ( 
     <CartProvider>
@@ -33,9 +34,6 @@ function App() {
     </CartProvider>
     )
 }
-
-
-
 export default App;
 
 
