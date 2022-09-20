@@ -7,9 +7,12 @@ export const ItemList = ({items}) =>{
      return( 
         
                 <div className="cardsContainer">
+    
            {
             items.map((mostrarProductos)=>{
-              return(
+              return(           
+                
+                
                 <Item item={mostrarProductos}/>
               )
             })

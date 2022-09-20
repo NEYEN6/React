@@ -1,5 +1,4 @@
 export const products = [{
-        "id": 1,
         "nombre": "Jordan Air 1 Mid I",
         "precio": 140.00,
         "picture": "jordan1.png",
@@ -22,7 +21,6 @@ export const products = [{
         "Marca": "Nike",
     },
     {
-        "id": 2,
         "nombre": "Jordan Air 1 Mid II",
         "precio": 100.00,
         "picture": "jordan1low.png",
@@ -32,7 +30,6 @@ export const products = [{
         "descripcion": "Se fabricaron en Italia y por eso recibieron el sobrenombre de «Itallian Stallion». El gran éxito de las AJ1 eclipsó de alguna forma este segundo modelo.."
     },
     {
-        "id": 3,
         "nombre": "Jordan Air 1 Mid III",
         "precio": 120.00,
         "picture": "jordan3.png",
@@ -42,7 +39,6 @@ export const products = [{
         "descripcion": "Llegaron con una campaña publicitaria con el lema «Gotta Be the Shoes». Fueron las primeras en incluir el logo Jumpman y las vimos en la película She’s Gotta Have It de Spike Lee."
     },
     {
-        "id": 4,
         "nombre": "Jordan Air 1 Mid IV",
         "precio": 347.00,
         "picture": "jordan4.png",
@@ -53,7 +49,6 @@ export const products = [{
         "descripcion": "“Taking Flight”. Estas AJ4 fueron la prueba definitiva de que las zapatillas de la marca se convertían en iconos del streetwear. Spike Lee las mostró de nuevo en una de sus películas, esta vez en Haz lo que debas (Do the Right Thing)."
     },
     {
-        "id": 5,
         "nombre": "Jordan Air 1 Mid V",
         "precio": 347.00,
         "picture": "jordan5.png",
@@ -63,7 +58,6 @@ export const products = [{
         "descripcion": "“The Fighter”. Inspiradas en la forma de jugar de Michael Jordan y en una de sus mejores temporadas."
     },
     {
-        "id": 6,
         "nombre": "Jordan Air 1 Mid VI",
         "precio": 170.00,
         "picture": "jordan6.png",
@@ -73,7 +67,6 @@ export const products = [{
         "descripcion": "“Promised Land”. Fueron las zapatillas que llevó durante la victoria del campeonato de la NBA del mismo año."
     },
     {
-        "id": 7,
         "nombre": "Jordan Air 1 Mid VII",
         "precio": 347.00,
         "picture": "jordan7.png",
@@ -84,7 +77,6 @@ export const products = [{
         "descripcion": "Apodadas también como “Pure Gold” por el oro conseguido por la selección estadounidense en los Juegos Olímpicos de Barcelona en 1992."
     },
     {
-        "id": 8,
         "nombre": "Jordan Air 1 Mid VIII",
         "precio": 347.00,
         "picture": "jordan8.png",
@@ -94,7 +86,6 @@ export const products = [{
         "descripcion": "Las “Strap In” celebraban la tercera victoria consecutiva en la NBA. Uno de los colores más famosos es el Aqua Tone."
     },
     {
-        "id": 9,
         "nombre": "Jordan Air 1 Mid IX",
         "precio": 347.00,
         "picture": "jordan9.png",
@@ -104,7 +95,7 @@ export const products = [{
         "descripcion": "“Perfect Harmony”. Estas zapatillas querían rendir homenaje a Jordan tras anunciar su retirada del baloncesto."
     },
     {
-        "id": 10,
+
         "nombre": "Jordan Air 1 Mid X",
         "precio": 347.00,
         "picture": "jordan10.png",
@@ -115,7 +106,7 @@ export const products = [{
         "descripcion": "“The Legacy Continues”. Michael Jordan manda un fax a los Chicago Bulls con el mensaje “I’m back” («He vuelto»)."
     },
     {
-        "id": 11,
+
         "nombre": "Jordan Air 1 Mid XI",
         "precio": 125.00,
         "picture": "jordan11.png",
@@ -125,7 +116,7 @@ export const products = [{
         "descripcion": "“Class Act”. Las AJ11 celebran el retorno de THE GOAT a las canchas de baloncesto."
     },
     {
-        "id": 12,
+
         "nombre": "AIR-JORDAN XII",
         "precio": 347.00,
         "picture": "jordan12.png",
@@ -136,7 +127,7 @@ export const products = [{
         "descripcion": "“The Dynasty Continues”. Es uno de los modelos más resistentes de la colección. Las pudimos ver en el famoso partido apodado «Flu Game»."
     },
     {
-        "id": 13,
+
         "nombre": "Jordan Air 1 Mid XIII",
         "precio": 347.00,
         "picture": "jordan13.png",
@@ -146,7 +137,7 @@ export const products = [{
         "descripcion": "También conocidas como “Black Cat Puonces” por el alias de «Gato negro» que se le daba al jugador por su destreza y habilidad."
     },
     {
-        "id": 14,
+
         "nombre": "Jordan Air 1 Mid XIV",
         "precio": 347.00,
         "picture": "jordan14.png",
@@ -156,7 +147,7 @@ export const products = [{
         "descripcion": "“Race Ready”. Su diseño se inspiró en el Ferrari 550 M de Jordan. Están decoradas con un total de 14 logos Jumpman."
     },
     {
-        "id": 15,
+
         "nombre": "Jordan Air 1 Mid XV",
         "precio": 347.00,
         "picture": "jordan15.png",
@@ -166,7 +157,7 @@ export const products = [{
         "descripcion": "“Speed of Sound”. Es el modelo número 13 que Tinker Hatfield diseñó de forma consecutiva para la colección. Coincidieron con el año de la segunda retirada de Michael Jordan."
     },
     {
-        "id": 16,
+
         "nombre": "Jordan Air 1 Mid XVI",
         "precio": 347.00,
         "picture": "jordan16.png",
@@ -177,7 +168,7 @@ export const products = [{
         "descripcion": "“Marching On”. Diseñadas por Wilson Smith III, iniciaban una nueva etapa en la línea de zapatillas Jordan."
     },
     {
-        "id": 17,
+
         "nombre": "Remera negra",
         "precio": 60.00,
         "picture": "remera-negra-mujer.png",
@@ -198,10 +189,10 @@ export const products = [{
         "Marca": "Nike",
     },
     {
-        "id": 18,
+
         "nombre": "Remera Nike Jordan",
         "precio": 60.00,
-        "picture": "remera-nike-jordan-mujer.png",
+        "picture": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.modoliso.com.ar%2Fproductos%2Fremera-negra-lisa-puro-algodon%2F&psig=AOvVaw1ZAuk8tt274MizCYKLdXGD&ust=1663798118724000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMihmJGxpPoCFQAAAAAdAAAAABAI",
         "categoria": "remeras",
         "envio": "Envio Gratis",
         "talle": "XS S M L",
@@ -219,7 +210,7 @@ export const products = [{
         "Marca": "Nike",
     },
     {
-        "id": 19,
+
         "nombre": "Remera Retro",
         "precio": 25.00,
         "picture": "Remera-Retro-mujer.png",
@@ -238,7 +229,7 @@ export const products = [{
         "Marca": "Jordan",
     },
     {
-        "id": 20,
+
         "nombre": "Remera Nike Sportswear ",
         "precio": 22.00,
         "picture": "remera-rosa-mujer.png",
@@ -257,7 +248,7 @@ export const products = [{
         "Marca": "Nike",
     },
     {
-        "id": 21,
+
         "nombre": "Remera Nike Short Sleeve",
         "precio": 22.00,
         "picture": "remera-corta.png",
@@ -276,7 +267,7 @@ export const products = [{
         "Marca": "Nike",
     },
     {
-        "id": 22,
+
         "nombre": "Pantalón Nike Sportswear ",
         "precio": 87.00,
         "picture": "Pantalón-Nike-Sportswear-mujer.png",
@@ -296,7 +287,7 @@ export const products = [{
         "Marca": "Nike",
     },
     {
-        "id": 22,
+
         "nombre": "Pantalón Nike Sportswear ",
         "precio": 85.00,
         "picture": "Pantalón-Nike-Sportswear-Icon-Clash.png",
@@ -316,7 +307,7 @@ export const products = [{
         "Marca": "Nike",
     },
     {
-        "id": 23,
+
         "nombre": "Pantalon Nike Flow  ",
         "precio": 85.00,
         "picture": "Pantalon-Nike-Flow-mujer.png",
@@ -336,7 +327,7 @@ export const products = [{
         "Marca": "Nike",
     },
     {
-        "id": 24,
+
         "nombre": "Campera Nike Sportswear",
         "precio": 98.00,
         "picture": "Campera-Nike-Sportswear-mujer.png",
@@ -357,7 +348,7 @@ export const products = [{
         "Marca": "Nike",
     },
     {
-        "id": 25,
+
         "nombre": "Campera Nike Air Hoodie",
         "precio": 98.00,
         "picture": "Campera-Nike-Air-mujer.png",
@@ -378,7 +369,7 @@ export const products = [{
         "Marca": "Nike",
     },
     {
-        "id": 26,
+
         "nombre": "Campera Jordan Essentials ",
         "precio": 98.00,
         "picture": "Campera-Jordan-Essentials-Woven.png",
@@ -399,7 +390,7 @@ export const products = [{
         "Marca": "Jordan",
     },
     {
-        "id": 27,
+
         "nombre": "Buzo Nike Sportswear",
         "precio": 96.00,
         "picture": "Buzo-Nike-Sportswear-Icon-mujer.png",
@@ -419,7 +410,7 @@ export const products = [{
         "Marca": "Jordan",
     },
     {
-        "id": 28,
+
         "nombre": "Buzo Nike Sportswear",
         "precio": 100.00,
         "picture": "Buzo-Nike-Sportswear-mujer.png",
@@ -439,7 +430,7 @@ export const products = [{
         "Marca": "Jordan",
     },
     {
-        "id": 29,
+
         "nombre": "Buzo Nike Sportswear Icon Clash",
         "precio": 105.00,
         "picture": "Buzo-Nike-Sportswear-negro-mujer.png",

@@ -24,7 +24,7 @@ function App() {
                     <Routes>
                     <Route path='/' element={<ItemListContainer/>} />
                     <Route path='/tienda' element={<ItemListContainer/>} />
-                    <Route path='/tienda/:tipoGenero/:tipoProducto' element={<ItemListContainer/>} />
+                    <Route path='/tienda/:categoria' element={<ItemListContainer/>} />
                     <Route path='/item/:productId' element={<ItemDetailContainer/>} />
                     <Route path='/cart' element={<CartContainer/>} />
                     <Route path='/firebase' element={<PaginaFirebase/>} />                  

@@ -8,25 +8,21 @@ import { useState } from 'react';
 
 
 export const ItemDetail = ({item})=>{
-    const loadImage = imageName => (require(`../imagenes/${imageName}`));
+   
     const {addProduct} = useContext(CartContext)
     const [quantity, setQuantity] = useState(0);
-
-
-
+    const loadImage = imageName => (require(`../imagenes/${imageName}`));
 
     const onAdd = (count)=>{
         addProduct(item,count);
         setQuantity(count);
     }
-    
-
-    
+   
     return(
         <div> 
         <div className="row containerArticulo">
-          <div className="col-sm-12 col-md-12 col-lg-6 description-and-detail contenedorImg">
-           {/*<img src={loadImage(item.picture)} alt=""/> si agrego la imagen se rompe pero depues de actualizar*/ }
+          <div className="col-sm-12 col-md-12 col-lg-6 description-and-detail contenedorImg"> 
+          <img src={item.pictureUrl} alt="img" />
           </div>  
           <div className="col-sm-12 col-md-12 col-lg-6 description-and-detail contenedorDatos">
             <h1>{item.nombre}</h1>
@@ -36,24 +32,18 @@ export const ItemDetail = ({item})=>{
             <a href="" className="promociones"><h3><FontAwesomeIcon icon={faCreditCard}/> {item.promociones} </h3></a>
             <h6>Talle <br/><li className="talles">{item.talle}</li></h6>  
             <ItemCount initial={1} stock={10} onAdd={onAdd}/>
-          </div>
-         
-          
+          </div>       
         </div>
     
         <div className="contenedorDetalles">
           <div className="contenedorDescripcion">      
           </div>
-    
           <div class="row">
                 <div className="col-12 description-and-detail">
-    
-             <div class="row description ">
-              <div class="col-sm-12 col-md-4 col-lg-3">
+          <div class="row description ">
+          <div class="col-sm-12 col-md-4 col-lg-3">
                 <h2 class="title d-none d-sm-block">Descripci&oacute;n</h2>
-            </div>
-    
-            
+          </div>    
         <div class="col-sm-12 col-md-8 col-lg-9 value content" id="collapsible-description-1">
             <p>
                 {item.descripcion}
@@ -135,25 +125,14 @@ export const ItemDetail = ({item})=>{
                                 <p>
                                     Marca: {item.Marca}       
                                 </p>
-                            </li>
-                        
-                    </ul>
-                
-            
+                            </li>                      
+                    </ul>    
         </div>
-    
-    
         </div>
-    
-            
-        </div> 
-        </div>
-      </div>
-            
-            
-            
-    
-        </div>
+    </div> 
+</div>
+</div>
+</div>
     )
 }
 

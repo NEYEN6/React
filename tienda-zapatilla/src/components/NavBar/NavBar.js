@@ -29,7 +29,7 @@ function NavScrollExample() {
 
             <NavDropdown title="Hombres" id="navbarScrollingDropdown">
               
-              <NavDropdown.Item as={Link} to ={"/tienda/hombres/zapatillas"} className='titulo'>
+              <NavDropdown.Item as={Link} to ={"/tienda/Zapatillas"} className='titulo'>
               Zapatillas
               </NavDropdown.Item>
               <NavDropdown.Item className='titulo'>
@@ -43,29 +43,14 @@ function NavScrollExample() {
             </NavDropdown>
 
             <NavDropdown  title="Mujeres" id="navbarScrollingDropdown">
-              <NavDropdown.Item as={Link} to ={"/tienda/mujer/remeras"} className='titulo'>Remeras</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to ={"/tienda/mujer/pantalones"} className='titulo'>Pantalones</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to ={"/tienda/mujer/buzos"} className='titulo'>Buzos</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to ={"/tienda/mujer/camperas"} className='titulo'>Camperas</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to ={"/tienda/Remeras"} className='titulo'>Remeras</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to ={"/tienda/Pantalones"} className='titulo'>Pantalones</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to ={"/tienda/Buzos"} className='titulo'>Buzos</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to ={"/tienda/Camperas"} className='titulo'>Camperas</NavDropdown.Item>
               <NavDropdown.Divider />
             </NavDropdown>
 
-            <Nav.Link as={Link} to ={"/tienda/hombres/zapatillas"} className='titulo'>Zapatillas </Nav.Link>
-
-            <NavDropdown title="Marcas" id="navbarScrollingDropdown">
-              <NavDropdown.Item className='titulo'>Adidas</NavDropdown.Item>
-              <NavDropdown.Item className='titulo'>
-              Nike 
-              </NavDropdown.Item>
-              <NavDropdown.Item className='titulo'>
-              Jordan
-              </NavDropdown.Item>
-              <NavDropdown.Item className='titulo'>
-              Champion
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-            </NavDropdown>
-            <Nav.Link className='titulo'>Sale</Nav.Link>   
+            <Nav.Link as={Link} to ={"/tienda"} className='titulo'>Todos </Nav.Link> 
           </Nav>
 
           

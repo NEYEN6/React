@@ -1,49 +1,61 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import '../style.css';
-import {ItemList} from '../ItemList/ItemList'
-import {products} from '../Products/products'
-import {useParams} from 'react-router-dom';
+import { ItemList } from "../ItemList/ItemList";
+import { useParams } from "react-router-dom";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "../../utils/firebase";
 
-const ItemListContainer = ()=>{
-  const {tipoProducto, tipoGenero} = useParams();
-  console.log(tipoGenero)
-  console.log(tipoProducto)
-  
+export const ItemListContainer = ()=>{
+    const {categoria} = useParams();
 
-  const [productos, setProductos] = useState([]);
+    const [productos, setProductos] = useState([]);
 
-const promesa = new Promise((resolve, reject)=>{
-    setTimeout(() => {
-        resolve(products);
-    }, );
-})
+    // const promesa = new Promise((resolve, reject)=>{
+    //     setTimeout(() => {
+    //         resolve(arregloProductos);
+    //     }, 2000);
+    // })
 
-useEffect(()=>{
-    promesa.then(resultado=>{
-        if(!tipoProducto && !tipoGenero){
-            setProductos(resultado)
-        } else{
-            const nuevaLista = resultado.filter(item=>item.categoria === tipoProducto);
-            console.log('nuevaLista',nuevaLista)
-            setProductos(nuevaLista)
+    useEffect(()=>{
+        const getData = async()=>{
+            try {
+                let queryRef = ""
+                if(!categoria){
+                    queryRef = collection(db, "items")
+                }else{
+                     queryRef = query(collection(db, "items"),where("categoria", "==", categoria))
+                }
+                const response = await getDocs(queryRef);
+                const datos = response.docs.map(doc=>{
+                    const newDoc = {
+                        ...doc.data(),
+                        id:doc.id
+                        
+                    }
+                    return newDoc;
+                });
+                console.log("productos", productos)
+                setProductos(datos)           
+            } catch (error) {
+                console.log(error);
+            }
         }
-        
-    })
-},[tipoProducto])
+        getData();
+        // promesa.then(resultado=>{
+        //     if(!categoria){
+        //         setProductos(resultado)
+        //     } else{
+        //         const nuevaLista = resultado.filter(item=>item.categoria === categoria);
+        //         setProductos(nuevaLista)
+        //     }
+        // })
+    },[categoria])
 
-console.log(productos)
-
-
-
-return(
-    <div className="listContainer">
-        
-        <ItemList items={productos}/>   
+    return(
+        <div className="listContainer">
+            
+            <ItemList items={productos}/>
         </div>
-   
-   
-  )
+    )
 }
-
-
 export default ItemListContainer;

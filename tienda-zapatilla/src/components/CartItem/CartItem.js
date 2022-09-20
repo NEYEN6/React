@@ -7,14 +7,14 @@ import { CartContext } from '../../context/CartContext';
 
   export const CartItem = ({item}) => {
     const {deleteProduct} = useContext(CartContext);
-    const loadImage = imageName => (require(`../imagenes/${imageName}`));  
+
 
     return (
         <div >
         <div className='row cart-container'>
         <div className='cart-item-container col-sm-7 col-md-7'  >       
             <div className='cart-img-container col-sm-5 col-md-2 '>
-            <img src={loadImage(item.picture)} alt="img" />
+            <img src={item.pictureUrl} alt="img" />
             </div>
             <div className='cart-info-container'>    
                 <h3>{item.nombre}</h3>
